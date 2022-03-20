@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercice 1</title>
+ <link href="css/style.css" rel="stylesheet">
+
+</head>
+<body onload="load_table()">
+
+
+
+    <table id="main_table" width="100%">
+        <tr>
+           <th>ID</th>
+           <th>Date de création</th>
+           <th>Etat</th>
+           <th>Nom</th>
+           <th>Prénom</th>
+           <th>Nom d'utilisateur</th>
+           <th>Matricule</th>
+           <th>Action</th>
+        </tr>
+        <tr>
+
+        </tr>
+    </table>
+<div class="Ajouter_btn">
+  <button class="open-modal-btn" id="btn_ajouter">Ajouter utilisateur</button>
+
+</div>
+
+    <dialog class="my-modal"  style="width: 67%;">
+        <!-- <h3>Well, hello there cowboy! 👋</h3>
+        <p>I'm a fancy modal.</p> -->
+        <h1>Ajoute d'utilisateurs</h1>
+
+        <!-- <ul class="list_inputs">
+         <li>
+          <label for="nom">nom</label>
+           <input type="text" id="nom">
+          </li>
+
+            <li>
+              <label for="prenom">prenom</label>
+              <input type="text" id="prenom">
+            </li>
+            <li>
+            <label for="etat">etat</label>
+            <input type="text" id="etat">
+            </li>
+            <li>
+            <label for="nom_user">nom  d'utilisateur</label>
+              <input type="text" id="nom_user">
+            </li>
+            <li>
+            <label for="date">de de création</label>
+
+              <input type="date" id="date">
+            </li>
+         <li>
+          <label for="matricule">matricule</label>
+          <input type="text" id="matricule"></li>
+        </ul> -->
+        <form action="" id="myform" onsubmit="return false;">
+        <div class="wrapper">
+          <div class="one">
+                   <label for="firstName">nom</label>
+            <input type="text" id="firstName" required>
+          </div>
+
+          <div class="two">
+            <label for="lastName">prenom</label>
+            <input type="text" id="lastName" required>
+          </div>
+          <div class="three">
+              <label for="status">etat</label>
+            <input type="text" id="status" required>
+          </div>
+          <div class="four">
+               <label for="userName">nom  d'utilisateur</label>
+            <input type="text" id="userName" required>
+          </div>
+          <div class="five">
+            <label for="date">de de création</label>
+            <input type="date" id="date" required>
+          </div>
+          <div class="six">
+              <label for="matricule">matricule</label>
+            <input type="text" id="matricule" required>
+          </div>
+          <div class="seven">
+      <button type="submit" class="btn_ajouter" onsubmit="test();">Enregistrer</button>
+        </div>
+        </div>
+
+      </form>
+        <div class="actions">
+          <!-- <button class="small ok-modal-btn">Ok!</button> -->
+          <button class="small close-modal-btn">Close</button>
+        </div>
+      </dialog>
+    <script src="js/main.js"></script>
+</body>
+</html>
